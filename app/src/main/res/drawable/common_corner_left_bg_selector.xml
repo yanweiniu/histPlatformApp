@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 这个是为了解决android 3.0以下版本的问题 ndroid:bottomLeftRadius与android:bottomRightRadius是相反的 -->
+    <item android:state_pressed="true">
+        <shape>
+            <corners
+                android:topRightRadius="0dp" android:bottomRightRadius="0dp" android:topLeftRadius="15dp" android:bottomLeftRadius="15dp"/>
+            <solid android:color="@color/common_actionbar_rg_selector" />
+
+            <padding android:bottom="1px" android:left="1px" android:right="1px" android:top="1px" />
+        </shape>
+    </item>
+    <item android:state_checked="true"><shape>
+        <corners
+            android:topRightRadius="0dp" android:bottomRightRadius="0dp" android:topLeftRadius="15dp" android:bottomLeftRadius="15dp"/>
+        <solid android:color="@color/common_actionbar_rg_selector" />
+
+        <padding android:bottom="1px" android:left="1px" android:right="1px" android:top="1px" />
+    </shape></item>
+    <item><shape>
+        <corners
+            android:topRightRadius="0dp" android:bottomRightRadius="0dp" android:topLeftRadius="15dp" android:bottomLeftRadius="15dp"/>
+
+        <solid android:color="@color/common_actionbar_rg_normal" />
+
+        <padding android:bottom="1px" android:left="1px" android:right="1px" android:top="1px" />
+    </shape></item>
+
+</selector>

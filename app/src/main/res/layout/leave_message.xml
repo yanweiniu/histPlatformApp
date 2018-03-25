@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/org_leave_message_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_actionbar_height"
+        android:background="@color/common_actionbar_bg">
+        <ImageView
+            style="@style/Widget.Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="新增留言"
+            android:textSize="@dimen/common_actionbar_textsize"
+            android:textColor="@color/common_actionbar_textcolor"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tv_leave_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/common_actionbar_textsize"
+            android:textColor="@color/common_actionbar_textcolor"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/common_activity_padding"
+            android:clickable="true"
+            android:text="发表"/>
+    </FrameLayout>
+    <EditText
+        android:id="@+id/et_leave_message"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="left"
+        android:hint="说点什么吧..."
+        android:padding="@dimen/common_activity_padding"
+        android:background="@drawable/common_tv_line_selector"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gl_background">#737373</color>
+    <color name="window_bg">#ffeef1f3</color>
+    <color name="qqblue">#ff54acea</color>
+    <color name="transparent">#00000000</color>
+  
+    <color name="save_false">#626262</color>
+    <color name="save_true">#4E4E4E</color>
+    <color name="view_divider">#D8D8D8</color>
+</resources>

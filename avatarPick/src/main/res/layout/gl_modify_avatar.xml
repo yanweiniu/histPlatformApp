@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/gl_background" >
+
+        <view
+            android:id="@+id/gl_modify_avatar_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            class="com.gammainfo.avatarpick.CropImageView" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gl_modify_avatar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#626262"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/gl_modify_avatar_cancel"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/gl_btn_gray"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#4E4E4E" />
+
+        <TextView
+            android:id="@+id/gl_modify_avatar_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/gl_btn_gray"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="#ffffff" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#4E4E4E" />
+
+        <ImageView
+            android:id="@+id/gl_modify_avatar_rotate_right"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/gl_btn_gray"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_rotate" />
+    </LinearLayout>
+
+</LinearLayout>

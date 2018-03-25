@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_actionbar_height"
+        android:background="@color/common_actionbar_bg">
+
+        <RadioGroup
+            android:id="@+id/rg_show_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_corner_bg"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbtn_dynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/common_corner_left_bg_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:text="动态"
+                android:textColor="@drawable/common_corner_tc_selector" />
+
+            <RadioButton
+                android:id="@+id/rbtn_ews"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/common_corner_right_bg_selector"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:text="新闻"
+                android:textColor="@drawable/common_corner_tc_selector" />
+        </RadioGroup>
+
+    </FrameLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/pull_to_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        style="@style/Widget.Scrollbar"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/content_main"/>
+            <com.marchsoft.organization.widget.AutoHeightListView
+                android:id="@+id/ls_dynamic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0px"
+                android:focusable="false">
+
+            </com.marchsoft.organization.widget.AutoHeightListView>
+
+            <com.marchsoft.organization.widget.AutoHeightListView
+                android:id="@+id/ls_news"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0px"
+                android:visibility="gone"
+                android:focusable="false">
+
+            </com.marchsoft.organization.widget.AutoHeightListView>
+
+
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+
+
+</LinearLayout>

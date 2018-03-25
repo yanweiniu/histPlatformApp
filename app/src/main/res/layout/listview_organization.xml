@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_white"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView3"
+        android:src="@mipmap/ic_mine_head" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="感动瞬间手机摄影大赛"
+            android:textSize="@dimen/common_normal_text_size"
+            android:textColor="#000000"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/textView5" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浏览量:"
+                android:textColor="#717373"
+                android:textSize="@dimen/common_smaller_text_size"
+                android:id="@+id/textView63" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#717373"
+                android:textSize="@dimen/common_smaller_text_size"
+                android:id="@+id/textView6" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="次"
+                android:textColor="#717373"
+                android:textSize="@dimen/common_smaller_text_size"
+                android:id="@+id/textView612" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加入人数:"
+                android:textColor="#717373"
+                android:textSize="@dimen/common_smaller_text_size"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView635" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#717373"
+                android:textSize="@dimen/common_smaller_text_size"
+                android:id="@+id/textView65" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人"
+                android:textColor="#717373"
+                android:textSize="@dimen/common_smaller_text_size"
+                android:id="@+id/textView6122" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/Widget.ArrowRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/imageView31" />
+</LinearLayout>

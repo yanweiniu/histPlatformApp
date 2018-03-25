@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+            <stroke
+                android:width="@dimen/commom_tv_line_width"
+                android:color="@color/common_tv_line_driver" />
+
+            <solid android:color="@color/common_tv_line_bg" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/commom_tv_line_width">
+        <shape android:shape="rectangle" >
+            <stroke
+                android:width="@dimen/commom_tv_line_width"
+                android:color="@color/common_tv_line_bg" />
+
+            <solid android:color="@color/common_tv_line_bg" />
+        </shape>
+    </item>
+
+</layer-list>

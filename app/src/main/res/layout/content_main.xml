@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <com.marchsoft.organization.viewpager.AutoScrollViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffeeeeee"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:textColor="@android:color/white"/>
+            <com.viewpagerindicator.CirclePageIndicator xmlns:vpi="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="right"
+                android:gravity="center"
+                vpi:centered="true"
+                vpi:radius="5dp"
+                vpi:fillColor="#273E4A"
+                vpi:pageColor="#619BBB"
+                vpi:strokeColor="#619BBB"
+                vpi:strokeWidth="0dp"/>
+        </LinearLayout>
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_driver_half_height"
+        android:background="@color/common_listitem_pressed"/>
+
+</LinearLayout>

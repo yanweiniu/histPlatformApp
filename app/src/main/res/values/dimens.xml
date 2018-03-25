@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="common_normal_text_size">16sp</dimen>
+    <dimen name="common_larger_text_size">18sp</dimen>
+    <dimen name="common_smaller_text_size">14sp</dimen>
+
+    <dimen name="common_tabbar_height">45dp</dimen>
+    <dimen name="common_tabbar_textsize">10dp</dimen>
+    <dimen name="common_actionbar_height">45dp</dimen>
+    <dimen name="common_actionbar_textsize">18sp</dimen>
+    <dimen name="common_actionbar_corner_radius">15dp</dimen>
+    <dimen name="common_activity_padding">10dp</dimen>
+    <dimen name="main_driver_half_height">5dp</dimen>
+    <dimen name="main_driver_height">10dp</dimen>
+    <dimen name="common_mine_item_height">45dp</dimen>
+    <dimen name="common_listitem_text_size">12sp</dimen>
+    <dimen name="common_listitem_smaller_text_size">10sp</dimen>
+    <dimen name="main_activity_details_padding">25dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="common_btn_height">40dp</dimen>
+    <dimen name="common_btn_textsize">20sp</dimen>
+    <dimen name="common_edittext_height">45dp</dimen>
+</resources>
